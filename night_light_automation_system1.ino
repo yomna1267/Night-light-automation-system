@@ -22,7 +22,7 @@ void setup()
   myservo.attach(9); // Attach the servo on pin 9 
   Serial.begin(9600);
 }
-// Check if someone enters the room in the dark to turn on LEDs
+
 void check()
 {
   sensorValue = analogRead(ledSensor); //Store intensity of illumination using LDR as a sensor 
@@ -34,7 +34,7 @@ void check()
   duration = pulseIn(echo, HIGH); // Calculate how long the waves have taken to return 
   distance = (duration/2) / 29.1; // Calculate distanse in centimeters
 
-  // Check if someone enters the room "near to Ultrasonic" in the dark "intensity of illumination is less than 300" to turn on LEDs
+  // Check if someone enters the room at night to turn on LEDs
   Serial.print("ledSensor: ");
   Serial.println(sensorValue);
   Serial.print("distance: ");
