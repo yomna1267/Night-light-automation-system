@@ -6,8 +6,8 @@ int led2 = 12; // LED connected to digital pin 12
 int led3 = 11; // LED connected to digital pin 11
 int ledSensor = A0; // LDR connected to analog pin A0
 int sensorValue = 0; 
-int trig = 10; // Ultrasonic sonic's trigger pin connected to digital pin 10
-int echo = 8; // Ultrasonic sonic's echo pin connected to digital pin 10
+int trig = 10; // Ultrasonic's trigger pin connected to digital pin 10
+int echo = 8; // Ultrasonic's echo pin connected to digital pin 10
 long duration; 
 long distance;
 
